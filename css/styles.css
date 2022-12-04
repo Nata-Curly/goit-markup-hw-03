@@ -79,14 +79,14 @@ img {
 /* Шапка */
 
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    padding: 24px 0 25px;
 }
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 354px;
-    padding: 24px 0 25px;
     }
 .header-nav {
     display: flex;
@@ -153,7 +153,7 @@ img {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
+    display: block;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -161,6 +161,8 @@ img {
     background-color: var(--color-action); 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    width: 200px;
+    height: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -179,8 +181,7 @@ img {
     display: flex;
     gap: 30px;
     }
-    
-.feature-title {
+ .feature-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -193,6 +194,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--color-secondary);
     width: 270px;
+    margin-bottom: 0;
 }
 
 /* Чим ми займаємося, Наша команда*/
@@ -223,7 +225,9 @@ img {
 .team-img {
 width: 270px;
 height: 260px;
-margin-bottom: 30px;
+}
+.teammate {
+    padding: 30px 0;
 }
 .teammate-name {
     font-weight: 500;
@@ -239,7 +243,7 @@ margin-bottom: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-secondary);
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 
 /* Портфоліо */
@@ -267,7 +271,6 @@ margin-bottom: 30px;
 .project-card-list {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 30px; */
     margin-left: calc(-1*var(--project-card-gap));
     margin-top: calc(-1*var(--project-card-gap));
 }
@@ -309,7 +312,7 @@ margin-bottom: 30px;
     letter-spacing: 0.03em;
     color: var(--color-text-action);
     text-decoration: none;
-}
+    }
 .address {
     font-style: normal;
     font-size: 14px;
@@ -321,10 +324,14 @@ margin-bottom: 30px;
     color: var(--color-text-action);
     text-decoration: none;
     cursor: pointer;
+    margin-bottom: 12px;
+}
+.mailto: {
+    margin-bottom: 12px;
 }
 .mailto, .tel {
     color: rgba(255, 255, 255, 0.6);
-}
+    }
 .mailto:hover, .mailto:focus {
     color: var(--color-action);
 }
