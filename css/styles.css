@@ -321,16 +321,14 @@ height: 260px;
     margin-top: 28px;
 }
 .link-address {
+    display: inline-block;
     color: var(--color-text-action);
     text-decoration: none;
     cursor: pointer;
-    margin-bottom: 12px;
-}
-.mailto: {
-    margin-bottom: 12px;
 }
 .mailto, .tel {
     color: rgba(255, 255, 255, 0.6);
+    margin-top: 12px;
     }
 .mailto:hover, .mailto:focus {
     color: var(--color-action);
